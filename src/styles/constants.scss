@@ -1,0 +1,29 @@
+/*Constants*/
+
+$headerBackColor: #24272C;
+$headerNormalHeight: 80px;
+$headerPaddingHeight-2: 78px;
+$white: #ffffff;
+$black: #000000;
+$dark: #333333;
+$weakblack: #666666;
+$font-14: 14px;
+$font-16: 16px;
+$font-18: 18px;
+$weakblue: #00c1de;
+$weakgray: #d4d4d4;
+$headerMenuSubColor: #272c30;
+$menuItemsLinkColor: #3c4144;
+$wrap-1200: 1200px;
+
+@mixin transition($item:all, $time: .3s) {
+  	transition: $item $time ease-in-out;
+	-moz-transition: $item $time ease-in-out; /* Firefox 4 */
+	-webkit-transition: $item $time ease-in-out; /* Safari 和 Chrome */
+	-o-transition: $item $time ease-in-out; /* Opera */
+}
+
+.cubic-bezier {
+	z-index: 10;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1), z-index 0s 0.12s; 
+}

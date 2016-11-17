@@ -1,0 +1,26 @@
+@import 'base';
+@import '../styles/constants';
+
+
+
+a{
+  color:#07c;
+  text-decoration: none;
+  &:hover{
+    color:#3af;
+    text-decoration: underline;
+  }
+}
+
+.container{
+  width: $wrap-1200;
+  margin: 0 auto;
+}
+.ui-fn-views {
+	position: relative;
+	width: 100%;
+	background-color: $white;
+}
+.ui-fn-center {
+  text-align: center;
+}

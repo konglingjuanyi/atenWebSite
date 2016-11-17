@@ -1,0 +1,6 @@
+aten@0.2.0 D:\常用知识工具整理\平时写的一些demo\atenWebSite
++-- eslint-plugin-promise@3.3.2  invalid
++-- eslint-plugin-standard@2.0.1  invalid
++-- UNMET PEER DEPENDENCY react@15.3.2
+`-- UNMET PEER DEPENDENCY react-dom@15.3.2
+
