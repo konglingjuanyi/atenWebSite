@@ -13,7 +13,7 @@ class Service extends React.Component {
     this.displayName = 'Service';
   }
   componentWillMount() {
-    fetch(serviceUrl + '/ServiceMock/Home/server.json').then(function(response) {
+    fetch('/server.json').then(function(response) {
       console.log(response);
     })
   }

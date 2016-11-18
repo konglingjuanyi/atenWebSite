@@ -107,7 +107,6 @@
     "rc-tween-one": "^0.11.8",
     "react": "^15.3.2",
     "react-animate": "^3.0.0",
-    "react-dom": "^0.14.8",
     "react-redux": "^4.4.5",
     "react-router": "^2.8.0",
     "redux": "^3.6.0",

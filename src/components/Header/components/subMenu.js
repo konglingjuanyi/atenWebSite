@@ -17,6 +17,11 @@ import ChildrenMenu from './childrenMenu'
 
 import MenuTitle from './MenuTitle'
 
+import {
+	addListenEvent
+}
+from '../../../constants'
+
 class OverlayVisible extends React.Component {
 	state = {
 		visible: false,
@@ -32,6 +37,7 @@ class OverlayVisible extends React.Component {
 		this.setState({
 			visible: flag
 		});
+
 	}
 	render() {
 		const upIconStyle = {
