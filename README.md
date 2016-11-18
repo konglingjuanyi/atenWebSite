@@ -20,8 +20,8 @@
 确认好你的环境配置，然后就可以开始以下步骤。
 
 ```bash
-$ git clone https://github.com/bodyno/react-starter-kit.git
-$ cd react-starter-kit
+$ git clone https://github.com/LypGitHub/atenWebSite.git
+$ cd atenWebSite
 $ npm install                   # Install project dependencies
 $ npm start                     # Compile and launch
 ```
