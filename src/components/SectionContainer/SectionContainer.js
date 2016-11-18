@@ -1,6 +1,4 @@
-import React from 'react';
-
-import ReactDoM from 'react-dom'
+import React from 'react'
 
 import SectionHeader from '../SectionHeader/SectionHeader'
 import {
@@ -21,8 +19,9 @@ class SectionContainer extends React.Component {
 		return (
 			<OverPack style={{ overflow: 'hidden', height: 400 }} 
 		        hideProps={{ 0: { reverse: true } }}
+		        playScale={0.15}
 		      	>
-		        <TweenOne key="0" animation={{ opacity: 1 }}
+		        <TweenOne key={this.props.key} animation={{ opacity: 1 }}
 		          style={{ opacity: 0, marginBottom: 10 }}
 		        >
 		        <div className={DEFAULT_CONFIG.cls}><SectionHeader title={this.props.title} text={this.props.text}/>{<this.props.childrenComponents />}</div>

@@ -10,7 +10,7 @@ class SectionHeader extends React.Component {
 	render() {
 		const titleStyle = {
 			"color": "#595757",
-			"font-size": "28px"
+			"fontSize": "28px"
 		}
 		return <div className="ui-fn-center">
 				<h3 style={titleStyle}>{this.props.title}</h3>

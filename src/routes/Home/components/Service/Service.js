@@ -1,11 +1,25 @@
 import React from 'react'
 
 import QueueAnim from 'rc-queue-anim';
+import ServiceItem from '../../../../components/ServiceItem'
+import {
+  serviceUrl
+}
+from '../../../../constants'
 
-const Service = (props) => (
-
-	<QueueAnim key="queue"
-          leaveReverse=""
+class Service extends React.Component {
+  constructor(props) {
+    super(props);
+    this.displayName = 'Service';
+  }
+  componentWillMount() {
+    fetch(serviceUrl + '/ServiceMock/Home/server.json').then(function(response) {
+      console.log(response);
+    })
+  }
+  render() {
+    return <QueueAnim key="queue"
+          leaveReverse={true}
           style={{ float: 'left', position: 'relative', left: '50%', marginLeft: -165 }}
         >
           <div key="a" className="code-box-shape queue-anim-demo" />
@@ -15,6 +29,8 @@ const Service = (props) => (
           <div key="e" className="code-box-shape queue-anim-demo" />
           <div key="f" className="code-box-shape queue-anim-demo" />
     </QueueAnim>
-);
+  }
+}
+
 
 export default Service
