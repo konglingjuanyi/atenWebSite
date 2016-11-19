@@ -16,7 +16,7 @@ class HomeView extends React.Component {
 		<AtCarousel />
 		<div className='container'>
 		    <div className='core-layout__viewport'>
-		      	<QueueAnim delay={300} className="queue-simple">
+				<QueueAnim delay={300} className="queue-simple">
 			      	<SectionContainer key="a" pageId="SERVICE" title="了解我们的服务项目" text="SERVICE ITEMS" childrenComponents={Service}/>
 			      	<SectionContainer key="b" pageId="PROJECT" title="欣赏我们的项目案例" text="PROJECT CASE" childrenComponents={Project} />
 			      	<SectionContainer key="c" pageId="MOBILE" title="明白我们的移动开发" text="MOBILE DEVELOPMENT" childrenComponents={Service} />

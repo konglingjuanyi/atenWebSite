@@ -9,14 +9,19 @@ from 'antd';
 
 import Header from '../../components/Header'
 
+import Footer from '../../components/Footer'
+
 export const CoreLayout = ({
 	children
 }) => (
-	<div className="ui-pc-headercontainer">
-		<Header />
+	<div className="ui-pc-container">
+		<div className="ui-pc-headercontainer">
+			<Header />
+		 </div>
 		{children}
 		<BackTop />
-	 </div>
+		<Footer />
+	</div>
 )
 
 CoreLayout.propTypes = {
