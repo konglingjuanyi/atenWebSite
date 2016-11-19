@@ -7,6 +7,7 @@ export const MENU_DATA = [{
 	path: "",
 	subMenu: [{
 		title: "服务项目",
+		key: "subMenu_11",
 		items: [{
 			name: "网站建设一条龙",
 			path: "/"
@@ -22,6 +23,7 @@ export const MENU_DATA = [{
 		}]
 	}, {
 		title: "服务项目",
+		key: "subMenu_12",
 		items: [{
 			name: "网站建设一条龙",
 			path: "/"
@@ -41,6 +43,7 @@ export const MENU_DATA = [{
 	path: "服务项目",
 	subMenu: [{
 		title: "服务项目",
+		key: "subMenu_21",
 		items: [{
 			name: "网站建设一条龙",
 			path: "/"
@@ -56,6 +59,7 @@ export const MENU_DATA = [{
 		}]
 	}, {
 		title: "服务项目",
+		key: "subMenu_22",
 		items: [{
 			name: "网站建设一条龙",
 			path: "/"
@@ -75,6 +79,7 @@ export const MENU_DATA = [{
 	path: "",
 	subMenu: [{
 		title: "服务项目",
+		key: "subMenu_31",
 		items: [{
 			name: "网站建设一条龙",
 			path: "/"
@@ -94,6 +99,7 @@ export const MENU_DATA = [{
 	path: "",
 	subMenu: [{
 		title: "服务项目",
+		key: "subMenu_41",
 		items: [{
 			name: "网站建设一条龙",
 			path: "/"
@@ -109,6 +115,7 @@ export const MENU_DATA = [{
 		}]
 	}, {
 		title: "服务项目",
+		key: "subMenu_42",
 		items: [{
 			name: "网站建设一条龙",
 			path: "/"
@@ -128,6 +135,7 @@ export const MENU_DATA = [{
 	path: "",
 	subMenu: [{
 		title: "服务项目",
+		key: "subMenu_51",
 		items: [{
 			name: "网站建设一条龙",
 			path: "/"
@@ -143,6 +151,7 @@ export const MENU_DATA = [{
 		}]
 	}, {
 		title: "服务项目",
+		key: "subMenu_52",
 		items: [{
 			name: "网站建设一条龙",
 			path: "/"
@@ -162,6 +171,7 @@ export const MENU_DATA = [{
 	path: "服务项目",
 	subMenu: [{
 		title: "服务项目",
+		key: "subMenu_61",
 		items: [{
 			name: "网站建设一条龙",
 			path: "/news"
@@ -177,6 +187,7 @@ export const MENU_DATA = [{
 		}]
 	}, {
 		title: "服务项目",
+		key: "subMenu_62",
 		items: [{
 			name: "网站建设一条龙",
 			path: "/"
@@ -196,6 +207,7 @@ export const MENU_DATA = [{
 	path: "",
 	subMenu: [{
 		title: "服务项目",
+		key: "subMenu_71",
 		items: [{
 			name: "网站建设一条龙",
 			path: "/"
@@ -211,6 +223,7 @@ export const MENU_DATA = [{
 		}]
 	}, {
 		title: "服务项目",
+		key: "subMenu_72",
 		items: [{
 			name: "网站建设一条龙",
 			path: "/"

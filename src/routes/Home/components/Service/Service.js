@@ -13,7 +13,7 @@ class Service extends React.Component {
     this.displayName = 'Service';
   }
   componentWillMount() {
-    fetch('/server.json').then(function(response) {
+    fetch('../../modules/service.json').then(function(response) {
       console.log(response);
     })
   }

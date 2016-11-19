@@ -31,7 +31,7 @@ class Header extends React.Component {
               <SubMenu />
             </div>
           </div>
-          </Affix>;
+        </Affix>;
   }
 }
 

@@ -42,14 +42,14 @@ class OverlayVisible extends React.Component {
 	render() {
 		const upIconStyle = {
 			"color": "#f6f6f6",
-			"font-size": "20px",
+			"fontSize": "20px",
 			"position": "absolute",
 			"bottom": "20px",
 		}
 		const menu = (
 			<Menu onClick={this.handleMenuClick.bind(this)}>
 				{this.props.subMenuArr.map((items, index) =>
-	 				<Menu.Item key={index}>
+	 				<Menu.Item key={items.key}>
 			        	<Row>
 			        		<Col span={3}>
 			        			<MenuTitle title={items.title} />

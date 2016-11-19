@@ -8,8 +8,8 @@ export default class MenuTitle extends React.Component {
 	render() {
 		const iconStyle = {
 			"color": "#fff",
-			"font-size": "16px",
-			"margin-left": "10px",
+			"fontSize": "16px",
+			"marginLeft": "10px",
 			"top": "2px",
 			"position": "relative"
 		}

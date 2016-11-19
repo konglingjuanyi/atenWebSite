@@ -85,7 +85,7 @@ class AtCarousel extends React.Component {
     );
     return (
       <BannerAnim
-        autoPlay="true"
+        autoPlay={true}
         onChange={this.onChange} 
         prefixCls="custom-arrow-thumb"
       >
