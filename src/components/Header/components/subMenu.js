@@ -56,7 +56,7 @@ class OverlayVisible extends React.Component {
 			        		</Col>
 			        		<Col span={21}>
 			        			{items.items.map((sub, index) => 
-									<Link className="ant-menu-items-link" key={index} to={sub.path}>{sub.name}</Link>
+									<Link className="ant-menu-items-link" key={sub.key} to={sub.path}>{sub.name}</Link>
 			        			)}
 			        		</Col>
 			        	</Row>
@@ -93,8 +93,8 @@ class OverlayVisible extends React.Component {
 
 class SubMenu extends React.Component {
 	render() {
-		const menu = MENU_DATA.map((item) =>
-			<OverlayVisible name={item.name} path={item.path} subMenuArr={item.subMenu} />
+		const menu = MENU_DATA.map((item, index) =>
+			<OverlayVisible key={index} name={item.name} path={item.path} subMenuArr={item.subMenu} />
 		)
 		return <ul className="ui-pc-header-menu">{menu}</ul>;
 	}
