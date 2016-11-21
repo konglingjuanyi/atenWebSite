@@ -12,11 +12,7 @@ class Service extends React.Component {
     super(props);
     this.displayName = 'Service';
   }
-  componentWillMount() {
-    fetch('../../modules/service.json').then(function(response) {
-      console.log(response);
-    })
-  }
+  componentWillMount() {}
   render() {
     return <QueueAnim key="queue"
           leaveReverse={true}

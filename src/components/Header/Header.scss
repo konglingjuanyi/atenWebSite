@@ -43,7 +43,7 @@
 			position: relative;
 			margin: 0 25px;
 			display: inline-block;
-			height: $headerPaddingHeight-2;
+			height: $headerPaddingHeight-4;
 			padding-bottom: 2px;
 			color: $white;
 			font-size: $font-14;
@@ -63,7 +63,7 @@
 			}
 			span {
 				position: absolute;
-				bottom: 0;
+				bottom: -4px;
 				left: 0;
 				height: 3px;
 				width: 0;
