@@ -6,7 +6,7 @@ class Animate1 extends React.Component {
     this.displayName = 'Animate1';
   }
   render() {
-    return <div key="a" className="code-box-shape queue-anim-demo">
+    return <div key={this.props.key} className="code-box-shape queue-anim-demo">
               <div className="box-animate-1">
                 {this.props.childrenComponentsBar}
               </div>

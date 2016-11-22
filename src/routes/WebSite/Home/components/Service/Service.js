@@ -66,13 +66,16 @@ class Service extends React.Component {
     ]
     const Diot = styleConfig.map((item, index) => <AnimateDiot animatestyle={item} key={index}></AnimateDiot>);
 
-    return <QueueAnim key = "queue"
+    return <QueueAnim key="queue"
             leaveReverse={true}
             type="bottom"
-            style={{ float: 'left', position: 'relative', width: '100%',marginTop: '45px', marginBottom: '30px' }}
+            duration={100}
+            interval={200}
+            animConfig={{opacity:[1, 0],translateY:[0, 50]}}
+            style={{ float: 'left', position: 'relative', width: '100%',marginTop: '45px', marginBottom: '30px'}}
             >
-            <Animate1 childrenComponents={AnimateInfo} childrenComponentsBar={Diot} title="网站建设 / 营销策划" info="策划、设计、制作、推广" />
-            <Animate1 childrenComponents={AnimateInfo} title="网站建设 / 营销策划" info="策划、设计、制作、推广" />
+            <Animate1 key="a" childrenComponents={AnimateInfo} childrenComponentsBar={Diot} title="网站建设 / 营销策划" info="策划、设计、制作、推广" />
+            <Animate1 key="b" childrenComponents={AnimateInfo} title="网站建设 / 营销策划" info="策划、设计、制作、推广" />
         </QueueAnim>
   }
 }
