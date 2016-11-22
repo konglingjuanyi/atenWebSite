@@ -9,6 +9,7 @@ import {
 }
 from 'react-router'
 import LogoImg from '../../Header/logo.png'
+import FooterIcon from '../../Header/footer-ic.png'
 
 class FooterMenu extends React.Component {
 	constructor(props) {
@@ -57,13 +58,13 @@ class FooterMenu extends React.Component {
 					<Col span={6}>
 						<div className="padding-left-50" style={{
 							marginBottom: "10px"
-						}}><a className="ui-pc-footer-online">在线客服</a></div>
+						}}><a className="ui-pc-footer-online"><img src={FooterIcon} alt="在线客服"></img>在线客服</a></div>
 						<ul>
 							<li>咨询热线：0594-2201192</li>
 							<li>咨询邮箱：749339425@QQ.com</li>
 						</ul>
 						<div className="padding-left-50">
-							<img src={LogoImg} className=""></img>
+							<img src={LogoImg} className="ui-pc-footer-logo"></img>
 						</div>
 					</Col>
 				</Row>

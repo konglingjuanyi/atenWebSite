@@ -17,7 +17,7 @@ class SectionContainer extends React.Component {
 			cls: "section-container",
 		}
 		return (
-			<OverPack style={{ overflow: 'hidden', height: 400 }} 
+			<OverPack style={{ overflow: 'hidden', height: 'auto', minHeight: '450px' }} 
 		        hideProps={{ 0: { reverse: true } }}
 		        playScale={0.15}
 		      	>

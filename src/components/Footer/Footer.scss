@@ -5,13 +5,19 @@ $CopyRightBgColor: #24272C;
 	position: relative;
 	background-color: $CopyRightBgColor;
 	.ui-pc-footer-online {
-		display: block;
+		display: inline-block;
 		border: 1px solid #fff;
 		border-radius: 4px;
 		background: transparent;
 		color: #fff;
-		padding: 3px 10px 3px 40px;
+		padding: 3px 10px;
 		font-size: 18px;
+		img {
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			margin-right: 8px;
+		}
 		&:hover {
 			text-decoration: none;
 			background: rgba(0,0,0,.8);
@@ -20,7 +26,8 @@ $CopyRightBgColor: #24272C;
 	}
 	.ui-pc-footer-logo{
 		display: block;
-		width: 100px;
+		width: 150px;
+		margin-top: 10px;
 	}
 	.padding-left-50 {
 		padding-left: 50px;
