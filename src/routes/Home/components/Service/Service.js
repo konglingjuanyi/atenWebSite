@@ -21,7 +21,7 @@ class Service extends React.Component {
     this.displayName = 'Service';
   }
   render() {
-    const styleArr = [{
+    const styleConfig = [{
         left: "25px"
       },
 
@@ -64,15 +64,14 @@ class Service extends React.Component {
         scale: 1
       }]
     ]
+    const Diot = styleConfig.map((item, index) => <AnimateDiot animatestyle={item} key={index}></AnimateDiot>);
     return <QueueAnim key = "queue"
             leaveReverse={true}
             type="bottom"
             style={{ float: 'left', position: 'relative', width: '100%',marginTop: '45px', marginBottom: '30px' }}
             >
-            <Animate1 childrenComponents={AnimateInfo} childrenComponentsBar={styleArr.map((item) => 
-                <AnimateDiot animatestyle={item} />
-            )} title="网站建设 / 营销策划" info="策划、设计、制作、推广" />
-            <Animate1 childrenComponents={AnimateInfo} title="网站建设 / 营销策划" info="策划、设计、制作、推广" />
+            <Animate1 childrenComponents={AnimateInfo} childrenComponentsBar={Diot} title="网站建设 / 营销策划" info="策划、设计、制作、推广" />
+    <Animate1 childrenComponents={AnimateInfo} title="网站建设 / 营销策划" info="策划、设计、制作、推广" />
         </QueueAnim>
   }
 }
