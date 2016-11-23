@@ -1,5 +1,4 @@
 import React from 'react';
-
 class Animate1 extends React.Component {
   constructor(props) {
     super(props);
@@ -7,11 +6,13 @@ class Animate1 extends React.Component {
   }
   render() {
     return <div key={this.props.key} className="code-box-shape queue-anim-demo">
-              <div className="box-animate-1">
-                {this.props.childrenComponentsBar}
-              </div>
-              {<this.props.childrenComponents info={this.props.info} title={this.props.title} />}
-            </div>
+          <div className="box-animate-1">
+            <img src={this.props.imgComponents} alt="" className="box-animate-img"></img>
+           
+            {this.props.childrenComponentsBar}
+          </div>
+          {<this.props.childrenComponents info={this.props.info} title={this.props.title} />}
+        </div>
   }
 }
 

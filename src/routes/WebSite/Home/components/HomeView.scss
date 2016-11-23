@@ -1,4 +1,13 @@
 @import '../../../../styles/constants.scss';
+.ui-fn-bg-white {
+  background-color: #fff;
+}
+.ui-fn-bg-weak {
+  background-color: #F8F6F7;
+}
+.ui-fn-bg-dark {
+  background-color: #383D41;
+}
 
 .duck {
   display: block;
@@ -19,6 +28,15 @@
     width: 150px;
     height: 150px;
     margin: 0 auto;
+    display: flex;
+    display: -ms-flex;
+    justify-content: center;
+    align-items: center;
+    .box-animate-img {
+      display: block;
+      width: 100%;
+      align-self: center;
+    }
   }
   .ui-animate-item {
     text-align: center;
@@ -36,8 +54,8 @@
 }
 .ui-fn-diot-left {
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 33px;
+  left: 31px;
   width: 8px;
   height: 8px;
   background-color: #333;
@@ -60,5 +78,33 @@
 }
 .queue-anim-demo {
     float: left;
-    margin: 0 5px 0 0 !important;
+    margin: 0 !important;
+}
+.ui-pc-project-banneritem {
+    z-index: 10;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1), z-index 0s 0.12s;
+    position: relative;
+    float: left;
+    width: 22%;
+    height: 548px;
+    background-color: transparent;
+    border: 1px solid #DBDBDD;
+    display: flex;
+    display: -ms-flex;
+    align-content: center;
+    img {
+      display: block;
+      width: 100%;
+      align-self: center;
+    }
+    &.active {
+        z-index: 11;
+        border: 1px solid #00c1de;
+        box-shadow: 0 0 20px rgba(0, 198, 226, 0.5);
+        width: 34%;
+        height: 563px;
+    }
+}
+.ant-affix {
+  z-index: 100;
 }

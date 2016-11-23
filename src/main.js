@@ -66,4 +66,5 @@ if (__DEV__) {
 // ========================================================
 // Go!
 // ========================================================
+React.initializeTouchEvents && React.initializeTouchEvents(true);
 render()

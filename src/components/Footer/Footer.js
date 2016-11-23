@@ -11,11 +11,11 @@ class Footer extends React.Component {
 	}
 	render() {
 		return <div className="ui-pc-footer"> 
-				<FooterMenu />
-				<div className="ui-pc-copyright">
-					<CopyRight />
+					<FooterMenu />
+					<div className="ui-pc-copyright">
+						<CopyRight />
+					</div>
 				</div>
-			</div>
 	}
 }
 

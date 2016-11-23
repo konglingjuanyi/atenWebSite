@@ -9,13 +9,20 @@ class SectionHeader extends React.Component {
 	}
 	render() {
 		const titleStyle = {
-			"color": "#595757",
+			"color": this.props.change ? "#fff" : "#595757",
 			"fontSize": "28px"
+		}
+		let style = this.props.change ? {
+			color: "#fff"
+		} : {
+
 		}
 		return <div className="ui-fn-center">
 				<h3 style={titleStyle}>{this.props.title}</h3>
 				<div className="section-header-line"></div>
-				<p className="section-header-text">{this.props.text}</p>
+				<p className="section-header-text" style={
+					style
+				}>{this.props.text}</p>
 			</div>;
 	}
 }
